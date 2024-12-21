@@ -19,24 +19,55 @@
 //         
 //	return 0;
 //}
-#include <iostream>
+//#include <iostream>
+//using namespace std;
+//int main(){
+//	int arr[7];
+//	int i,min;
+//	for(int i=0; i<=6; i++){
+//		cout<<"enter the value at position "<<i+1<<endl;
+//		cin>> arr[i];
+//	}
+//	min = arr[0];
+//	for(int i =1; i<=6 ; i++){
+//		if(min > arr[i]){
+//			min = arr[i];
+//		}
+//		
+//	}cout<<"minimum value is "<<min<<endl;
+//	
+//	
+//	
+//	return 0;
+//}
+
+#include<iostream>
 using namespace std;
 int main(){
-	int arr[7];
-	int i,min;
-	for(int i=0; i<=6; i++){
-		cout<<"enter the value at position "<<i+1<<endl;
-		cin>> arr[i];
+	int arr[7]={5,6,8,20,-6,-9,-25};
+	int greatest = INT_MIN;
+	//int smallest = INT_MAX;
+	for(int i = 0 ; i < 7 ; i++){
+	//	smallest = arr[i];
+	if(arr[i] > greatest){
+		greatest = arr[i];   
 	}
-	min = arr[0];
-	for(int i =1; i<=6 ; i++){
-		if(min > arr[i]){
-			min = arr[i];
-		}
-		
-	}cout<<"minimum value is "<<min<<endl;
-	
-	
+        
+	}
+//	cout<<"smallest is"<<smallest;
+    cout<<"greatest is"<<;	
 	
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+

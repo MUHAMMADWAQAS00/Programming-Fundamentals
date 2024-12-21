@@ -4,8 +4,8 @@ using namespace std;
 int main() {
     int previousReading, currentReading, unitsConsumed;
     double costPerUnit, grossBill, finalBill;
-
-    // Input previous and current readings
+    
+	  // Input previous and current readings
     cout << "Enter previous reading: ";
     cin >> previousReading;
     cout << "Enter current reading: ";
