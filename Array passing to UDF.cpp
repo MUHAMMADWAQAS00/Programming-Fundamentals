@@ -64,12 +64,44 @@
 //    return position; // Return the position directly
 //}
 
-
-
-#include<iostream>
+#include <iostream>
 using namespace std;
-int search (int , int[]);
-int main(){
-	int arr[10] = {1,2,3,4,5,56,6,7,8,9};
-	int no , ans;
+
+// Function prototype to find min and max
+void findMinMax(int arr[], int size, int &min, int &max);
+
+int main() {
+    int arr[10];
+    int min, max;
+
+    // Input: Taking 10 numbers from the user
+    cout << "Enter 10 numbers: ";
+    for (int i = 0; i < 10; i++) {
+        cin >> arr[i];
+    }
+
+    // Call the function to find minimum and maximum
+    findMinMax(arr, 10, min, max);
+
+    // Output: Display the results
+    cout << "Minimum number: " << min << endl;
+    cout << "Maximum number: " << max << endl;
+
+    return 0;
 }
+
+// Function definition to find min and max
+void findMinMax(int arr[], int size, int &min, int &max) {
+    min = arr[0];
+    max = arr[0];
+
+    for (int i = 1; i < size; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+}
+
