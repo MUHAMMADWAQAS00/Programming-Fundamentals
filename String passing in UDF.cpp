@@ -25,7 +25,6 @@ int main() {
     // Call the function to convert to uppercase
     string upperCaseString = convertToUppercase(input);
     cout << "Uppercase string: " << upperCaseString << endl;
-
     return 0;
 }
 

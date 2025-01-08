@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 int abc(int);
@@ -11,7 +12,7 @@ int main(){
 int abc(int i)
 {
 	static int c = 10;
-	 static int d = 10;
+	  int d = 10;
 	c = c * 1;
 	c++;
 	d = d*i;

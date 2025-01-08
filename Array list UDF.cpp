@@ -11,7 +11,7 @@ int main(){
 	cout<<ans;
 
 	return 0;
-}int func1(int x, int y){
+}   int func1(int x, int y){
 	int m,n;
 	m = func2(x);
 	n = func2(y);
